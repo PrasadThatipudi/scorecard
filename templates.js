@@ -25,7 +25,7 @@ export const extrasTemplate = () => ({
 
 export const batterTemplate = (batsaman) => ({
   name: batsaman,
-  dismissal: "not out",
+  dismissal: { kind: "not out" },
   runs: 0,
   balls: 0,
   fours: 0,
@@ -34,7 +34,7 @@ export const batterTemplate = (batsaman) => ({
 
 export const bowlerTemplate = (bowler) => ({
   name: bowler,
-  overs: 0,
+  overs: { overs: 0, balls: 0 },
   runs: 0,
   wickets: 0,
 });
